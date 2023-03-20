@@ -44,7 +44,9 @@
                     Send
                   </button>
             </form>
-
+            {% for message in messages %}
+            <div>Raphael: {{message.text}}</div>
+            {% endfor %}
         </div>
     </main>
 </div>
